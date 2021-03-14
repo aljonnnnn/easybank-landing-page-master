@@ -1,0 +1,99 @@
+.hero {
+    position: relative;
+    height: 95vh;
+    background-image: url('/dist/images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+
+    @media (min-width: $medium) {
+        background-image: none;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    
+    &__intro-desktop {
+        display: none;
+    }
+    @media (min-width: $medium) {
+        &__intro-desktop {
+            display: block;
+            position: absolute;
+            top: 27px;
+            right: -309px;
+            max-width: 1198.32px;
+        }
+    }
+    @media (min-width: $xlarge) {
+        &__intro-desktop {
+            position: absolute;
+            top: -177px;
+            right: -457px;
+            max-width: 1198.32px;
+        }
+    }
+    
+    &__imgMockups {
+        position: absolute;
+        padding: 0 24px;
+        top: -43px;
+        // left: 0;
+        right: 0;
+
+        @media (min-width: $medium) {
+            top: 69px;
+            right: -158px;
+            max-width: 547px;
+            max-height: 939px;
+        }
+
+        @media (min-width: $xlarge) {
+            top: -43px;
+            right: -132px;
+            max-width: 767px;
+            max-height: 939px;
+        }
+        
+    }
+
+    &__text {
+        position: absolute;
+        bottom: -110px;
+        left: 0;
+        right:  0;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        padding: 0 24px;
+       
+        @media (min-width: $medium) {
+            width: 60%;
+            text-align: left;
+            top: 55%;
+        }
+        @media (min-width: $xlarge) {
+            width: 40%;
+        }
+    }
+
+    &__heading {
+        font-size: 38px;
+        font-weight: 400;
+        color: $darkBlue;
+        margin-bottom: 18px;
+        // font-size: 53px;
+        // margin-bottom: ;
+    }
+    
+    &__paragraph {
+        font-size: 18px;
+        font-weight: 400;
+        color: $GrayishBlue;
+        margin-bottom: 30px;
+        // margin-bottom: 48px;
+    }
+}

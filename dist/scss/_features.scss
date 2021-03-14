@@ -1,0 +1,92 @@
+.features {
+    background-color: $lightGrayishBlue;
+    padding: 65px 0 48px;
+
+    @media (min-width: $medium) {
+        margin-top: -210px;
+    }
+    &__title {
+        text-align: center;
+        
+        @media (min-width: $medium) {
+            width: 70%;
+            text-align: left;
+        }
+        @media (min-width: $xlarge) {
+            margin-left: -24px;
+            width: 50%;
+        }
+    }
+
+    &__title-name {
+        font-size: 31px;
+        font-weight: 400;
+        color: $darkBlue;
+        margin-bottom: 19px;
+    }
+
+    &__title-descrip {
+        font-size: 15px;
+        font-weight: 400;
+        color: $GrayishBlue;
+        margin-bottom: 41px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -27px;
+        margin-right: -27px;
+
+        @media (min-width: $medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: $xlarge) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+
+    &__box {}
+
+    &__item {
+        text-align: center;
+        padding: 17px;
+
+        @media (min-width: $xlarge) {
+            text-align: left;
+            padding: 13px;
+        }
+    }
+
+    &__item-img {
+        max-width: 72px;
+        margin-bottom: 27px;
+
+        @media (min-width: $xlarge) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__item-title {
+        font-size: 19px;
+        font-weight: 400;
+        color: $darkBlue;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+
+        @media (min-width: $xlarge) {
+            margin-bottom: 25px;
+        }
+    }
+    
+    &__item-descrip {
+        font-size: 15px;
+        font-weight: 400;
+        color: $GrayishBlue;
+
+        @media (min-width: $xlarge) {
+           font-size: 16px;
+        }
+    }
+}

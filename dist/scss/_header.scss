@@ -1,0 +1,127 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 1100;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        z-index: 1100;
+
+
+        @media (min-width: $medium) {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+
+        &__logo {}
+
+        &__hamburger {
+
+            &--open {
+                display: block;
+            }
+
+            &--close {
+                display: none;
+            }
+
+            &.change {
+                .nav__hamburger--open {
+                    display: none !important;
+                }
+    
+                .nav__hamburger--close {
+                    display: block !important;
+                }
+            }
+
+            
+            @media (min-width: $medium) {
+                display: none;
+            }
+        }
+
+        &__menu {
+            position: fixed;
+            top: 88px;
+            left: 24px;
+            right: 24px;
+            text-align: center;
+            background-color: $white;
+            padding: 28px 0;
+            z-index: 1190;
+            overflow: hidden;
+            visibility: hidden;
+
+            &.show {
+                visibility: visible;
+            }
+
+            @media (min-width: $medium) {
+                visibility: visible !important;
+            }
+
+            @media (min-width: $medium) {
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: left;
+                display: flex !important;
+                padding: 0;
+            }
+        }
+    
+        &__linear {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to bottom, $darkBlue, $white);
+            z-index: 1;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+
+                @media (min-width: $medium) {
+                    margin-bottom: 0;
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        &__link {
+            font-size: 18px;
+            font-weight: 400;
+            color:$GrayishBlue;
+            text-transform: capitalize;
+            position: relative;
+            
+            &:hover {
+                transition: all 0.3s ease;
+                color: $darkBlue;
+            }
+            
+            @media (min-width: $medium) {
+                font-size: 14px;
+            }
+        }
+        
+        .primary-btn {
+            display: none;
+            
+            @media (min-width: $medium) {
+                display: block;
+            }
+        }
+    }
+}

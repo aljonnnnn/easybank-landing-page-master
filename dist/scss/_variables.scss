@@ -1,16 +1,28 @@
 // colors
 $darkBlue:  hsl(233, 26%, 24%);
 $limeGreen: hsl(136, 65%, 51%);
-$veryLightGray:  hsl(0, 0%, 98%);
+$brightCyan: hsl(192, 70%, 51%);
+$GrayishBlue:  #9698a6;
+$lightGrayishBlue:  hsl(220, 14%, 96%);
+$veryLightGray:  #fafafa;
 $white: hsl(0, 0%, 100%);
 
-// font-family
 
+// font-family
 $fontFamily-1: 'Public Sans', sans-serif;
 
+
 // breakpoints
-$small-mobile: 360px;
-$regular-mobile: 576px;
-$regular-tablet: 768px;
-$large-tablet: 1024px;
-$desktop: 1200px;
+// $small-mobile: 360px;
+// $regular-mobile: 576px;
+// $regular-tablet: 768px;
+// $large-tablet: 1024px;
+// $desktop: 1200px;
+
+// breakpoints for mobile first
+$small: 375px;
+$medium: 576px; 
+$large: 1024px;
+$xlarge: 1280px;
+
+// breakpoints for mobile first
