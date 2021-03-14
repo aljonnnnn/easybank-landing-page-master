@@ -1,19 +1,19 @@
 .footer {
     background-color: $darkBlue;
-    padding: 50px 0 48px;
+    padding: 3.125rem 0 3rem;
 
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
 
         @media (min-width: $medium) {
-            grid-template-columns: 186px 125px 125px 1fr;
+            grid-template-columns: 11.625rem 7.8125rem 7.8125rem 1fr;
         }
         @media (min-width: $large) {
-            grid-template-columns: 186px 125px 125px 1fr;
+            grid-template-columns: 11.625rem 7.8125rem 7.8125rem 1fr;
         }
         @media (min-width: $xlarge) {
-            grid-template-columns: 285px 191px 191px 1fr;
+            grid-template-columns: 16.125rem 11.9375rem 11.9375rem 1fr;
         }
     }
 
@@ -35,23 +35,23 @@
 
     &__logo {
         img {
-            max-width: 138.76px;
+            max-width: 8.625rem;
         }
     }
 
     &__group-icon {
-        margin-top: 24px;
-        margin-bottom: 36px;
+        margin-top: 1.5rem;
+        margin-bottom: 2.25rem;
 
         @media (min-width: $medium) {
-            margin-top: 51px;
+            margin-top: 3.1875rem;
         }
     }
 
     &__social-icon {
-        max-width: 21px;
+        max-width: 1.3125rem;
         &:not(:last-child) {
-            margin-right: 10px;
+            margin-right: 0.625rem;
         }
     }
 
@@ -60,18 +60,18 @@
 
     &__link {
         display: inline-block;
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: $lightGrayishBlue;
         text-transform: capitalize;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
     }
     
     .easybank-credits {
-        margin-top: 10px;
+        margin-top: 0.625rem;
         color: $GrayishBlue;
 
         @media (min-width: $xlarge) {
-            margin-top: 30px;
+            margin-top: 1.875rem;
         }
     }
 }

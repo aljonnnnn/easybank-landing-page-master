@@ -1,22 +1,22 @@
 .articles {
     background-color: $veryLightGray;
-    padding: 83px 0;
+    padding: 5.1875rem 0;
 
     .container {
         @media (min-width: $medium) {
-            max-width: 700px;
+            max-width: 43.75rem;
         }
 
         @media (min-width: $xlarge) {
-            max-width: 1206px;
+            max-width: 75.375rem;
         }
     }
 
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: -24px;
-        margin-right: -24px;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
 
         @media (min-width: $medium) {
             grid-template-columns: repeat(2, 1fr);
@@ -28,29 +28,28 @@
     }
 
     &__title {
-        margin-bottom: 39px;
+        margin-bottom: 2.53125rem;
         text-align: center;
 
         @media (min-width: $medium) {
             text-align: left;
         }
         @media (min-width: $xlarge) {
-            margin-bottom: 50px;
+            margin-bottom: 3.125rem;
         }
     }
 
     &__title-name {
-        font-size: 31px;
-        font-weight: 400;
+        font-size: 1.9375rem;
         color: $darkBlue;
     }
 
     &__box {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
 
         &:not(:last-child) {
-            margin-bottom: 23px;
+            margin-bottom: 1.4375rem;
 
             @media (min-width: $xlarge) {
                 margin-bottom: 0;
@@ -64,36 +63,33 @@
     }
     
     &__item-img {
-        height: 200px;
+        height: 12.5rem;
         object-fit: cover;
         border-radius: 5px 5px 0 0;
     }
     
     &__item-box {
-        padding: 26px 20px 42px 29px;
+        padding: 1.625rem 1.25rem 2.625rem 1.8125rem;
 
         @media (min-width: $xlarge) {
-          padding: 26px 17px 31px 21px;
+          padding: 1.625rem 1.0625rem 1.9375rem 1.3125rem;
         }
     }
 
     &__item-author {
-        font-size: 10px;
-        font-weight: 400;
+        font-size: 0.625rem;
         color: $GrayishBlue;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     &__item-title {
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 1rem;
         color: $darkBlue;
-        margin-bottom: 9px;
+        margin-bottom: 0.5625rem;
     }
     
     &__item-descrip {
-        font-size: 13px;
-        font-weight: 400;
+        font-size: 0.8125rem;
         color: $GrayishBlue;
         line-height: 1.4;
     }

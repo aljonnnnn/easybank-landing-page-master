@@ -23,52 +23,51 @@
         &__intro-desktop {
             display: block;
             position: absolute;
-            top: 27px;
-            right: -309px;
-            max-width: 1198.32px;
+            top: 1.6875rem;
+            right: -19.125rem;
+            max-width: 74.875rem;
         }
     }
     @media (min-width: $xlarge) {
         &__intro-desktop {
             position: absolute;
-            top: -177px;
-            right: -457px;
-            max-width: 1198.32px;
+            top: -11.0625rem;
+            right: -28.5625rem;
+            max-width: 7.4375rem;
         }
     }
     
     &__imgMockups {
         position: absolute;
-        padding: 0 24px;
-        top: -43px;
-        // left: 0;
+        padding: 0 1.5rem;
+        top: -2.6875rem;
         right: 0;
 
         @media (min-width: $medium) {
-            top: 69px;
-            right: -158px;
-            max-width: 547px;
-            max-height: 939px;
+            top: 4.3125rem;
+            right: -9.875rem;
+            max-width: 34.1875rem;
+            max-height: 58.6875rem;
         }
 
         @media (min-width: $xlarge) {
-            top: -43px;
-            right: -132px;
-            max-width: 767px;
-            max-height: 939px;
+            top: -2.6875rem;
+            right: -8.25rem;
+            max-width: 47.9375rem;
+            max-height: 58.6875rem;
         }
         
     }
 
     &__text {
         position: absolute;
-        bottom: -110px;
+        bottom: -6.875rem;
         left: 0;
         right:  0;
         transform: translateY(-50%);
         width: 100%;
         text-align: center;
-        padding: 0 24px;
+        padding: 0 1.5rem;
        
         @media (min-width: $medium) {
             width: 60%;
@@ -81,19 +80,21 @@
     }
 
     &__heading {
-        font-size: 38px;
-        font-weight: 400;
+        font-size: 2.375rem;
         color: $darkBlue;
-        margin-bottom: 18px;
-        // font-size: 53px;
-        // margin-bottom: ;
+        margin-bottom: 1.125rem;
+        @media (min-width: $xlarge) {
+            font-size: 3.3125rem;
+            margin-bottom: 1.5rem
+        }
     }
     
     &__paragraph {
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 1.125rem;
         color: $GrayishBlue;
-        margin-bottom: 30px;
-        // margin-bottom: 48px;
+        margin-bottom: 1.875rem;
+        @media (min-width: $xlarge) {
+            margin-bottom: 3rem;
+        }
     }
 }
